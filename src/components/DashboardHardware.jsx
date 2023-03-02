@@ -25,7 +25,7 @@ const DashboardHardware = () => {
         <Card className="hardwareEquipmentsCard">
           <Row>
             <Col md={24} xs={24}>
-              <Title level={4} className="title">
+              <Title level={4} className="title" style={{cursor: "default"}}>
                 Hardware Equipments
               </Title>
             </Col>
@@ -33,13 +33,13 @@ const DashboardHardware = () => {
               <Row>
                 <Col md={8} xs={24}>
                   <Row>
-                    <Col md={24} xs={24} style={{ marginTop: "1rem" }}>
+                    <Col md={24} xs={24} style={{ marginTop: "1rem"}} >
                       <Select
                         size="large"
                         // value={selectedEngine}
                         onChange={setSelectedEngine}
                         options={engineList}
-                        style={{ width: "100%" }}
+                        style={{ width: "100%", cursor:"pointer" }}
                         placeholder="Search to Select engine"
                         showSearch
                         filterOption={(input, option) =>
@@ -58,7 +58,7 @@ const DashboardHardware = () => {
                         // value={selectedSensor}
                         onChange={setSelectedSensor}
                         options={sensorList}
-                        style={{ width: "100%" }}
+                        style={{ width: "100%", cursor:"pointer"  }}
                         placeholder="Search to Select sensor"
                         showSearch
                         filterOption={(input, option) =>

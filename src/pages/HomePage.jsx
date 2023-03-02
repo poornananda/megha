@@ -4,8 +4,10 @@ import React from "react";
 import DashboardHardware from "../components/DashboardHardware";
 import DashboardReports from "../components/DashboardReports";
 import "./index.scss";
+import { useSelector } from "react-redux";
 
 const HomePage = () => {
+    const userName = useSelector((state) => state.loginDetails.userName);
   const { Title, Text } = Typography;
 
   const handleLogOut = () => {
@@ -38,7 +40,7 @@ const HomePage = () => {
               trigger="click">
               <Button className="homePageUserButton">
                 <div>
-                  <Text>Megharaj</Text>
+                  <Text>{userName}</Text>
                   &nbsp;&nbsp;&nbsp;
                   <Avatar
                     style={{ backgroundColor: "#707E7D" }}
@@ -49,10 +51,10 @@ const HomePage = () => {
             </Popover>
           </Col>
           <Col md={24} xs={24} className="TitleRow">
-            <Title className="title">
+            <Title className="title" level={2}>
               AVIATION
             </Title>
-            <Title className="title">
+            <Title className="title" level={3}>
               Predicting Equipment Maintenance
             </Title>
           </Col>

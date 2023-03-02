@@ -3,6 +3,10 @@ import React from "react";
 import "./styles.scss";
 
 const DashboardReports = () => {
+
+    const clickHandler = (event) => {
+
+    }
   const { Title } = Typography;
   return (
     <Row>
@@ -10,7 +14,7 @@ const DashboardReports = () => {
         <Card className="hardwareEquipmentsCard">
           <Row>
             <Col md={24} xs={24}>
-              <Title level={4} className="title">
+              <Title level={4} className="title" onClick= {clickHandler} style={{cursor: "pointer"}}>
                 Reports
               </Title>
             </Col>

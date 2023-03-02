@@ -7,8 +7,11 @@ import {
   LockOutlined,
   UserOutlined,
 } from "@ant-design/icons";
+import { useDispatch } from "react-redux";
+import { slice } from "../store/createStore";
 
 const LoginPage = () => {
+    const dispatch  = useDispatch();
   const { Title } = Typography;
   const [userName, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -32,10 +35,11 @@ const LoginPage = () => {
       setLoader(true);
       setTimeout(() => {
         localStorage.setItem("userLogin", true);
+        dispatch(slice.actions.saveUserName(userName));
         setLoader(false);
         openNotificationWithIcon("success", "Login", "Successfully logged in");
         window.location = "/";
-      }, 2000);
+      }, 500);
     }
   };
 

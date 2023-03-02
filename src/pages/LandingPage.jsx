@@ -29,7 +29,7 @@ const LandingPage = () => {
           <Col md={12} xs={20}>
             <Card className="aboutUsCard">
               <Title level={3} className="aboutUsTitle">
-                About US
+                About Us:
               </Title>
               <Title level={5} className="aboutUsContent">
                 Data is more valuable than gold. Here’s the thing. Data can do so many
