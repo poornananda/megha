@@ -4,12 +4,12 @@ const initialState = {
     userName : ''
 };
 
-export const slice  = createSlice(({
+export const slice  = createSlice({
     name:'loginDetails',
     initialState,
     reducers: {
-        saveUserName (state, action) {
+        setUserName (state, action) {
             state.userName = action.payload;
         }
     }
-}));
+});

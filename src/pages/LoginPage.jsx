@@ -9,9 +9,12 @@ import {
 } from "@ant-design/icons";
 import { useDispatch } from "react-redux";
 import { slice } from "../store/createStore";
+import { useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 const LoginPage = () => {
-    const dispatch  = useDispatch();
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
   const { Title } = Typography;
   const [userName, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -27,19 +30,25 @@ const LoginPage = () => {
     });
   };
 
-  const handleSubmit = () => {
+  const isUserLoggedIn = localStorage.getItem("userLogin");
+  if (isUserLoggedIn) {
+    const userName = localStorage.getItem("userName");
+    if (userName) dispatch(slice.actions.setUserName(userName));
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
     if (!userName || !password) {
       setValidation(true);
     } else {
       setValidation(false);
       setLoader(true);
-      setTimeout(() => {
         localStorage.setItem("userLogin", true);
-        dispatch(slice.actions.saveUserName(userName));
+        localStorage.setItem("userName",  userName);
+        dispatch(slice.actions.setUserName(userName));
         setLoader(false);
         openNotificationWithIcon("success", "Login", "Successfully logged in");
-        window.location = "/";
-      }, 500);
+        navigate("/home");
     }
   };
 
@@ -50,12 +59,8 @@ const LoginPage = () => {
         <Col md={24} xs={24}>
           <Row>
             <Col md={24} xs={24} className="TitleRow">
-              <Title className="title">
-                AVIATION
-              </Title>
-              <Title className="title">
-                Predicting Equipment Maintenance
-              </Title>
+              <Title className="title">AVIATION</Title>
+              <Title className="title">Predicting Equipment Maintenance</Title>
             </Col>
             <Col md={8} xs={2} />
             <Col md={8} xs={20}>
@@ -117,7 +122,8 @@ const LoginPage = () => {
                     <Button
                       loading={loader}
                       onClick={handleSubmit}
-                      className="loginButton">
+                      className="loginButton"
+                    >
                       Login
                     </Button>
                   </Col>
@@ -127,7 +133,9 @@ const LoginPage = () => {
             <Col md={8} xs={2} />
           </Row>
         </Col>
-      </Row>
+      </Row>{
+        isUserLoggedIn ? <Navigate to="/Home"/> : null 
+      }
     </>
   );
 };

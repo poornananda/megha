@@ -4,15 +4,29 @@ import React from "react";
 import DashboardHardware from "../components/DashboardHardware";
 import DashboardReports from "../components/DashboardReports";
 import "./index.scss";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { slice } from "../store/createStore";
+import { Navigate } from "react-router-dom";
 
 const HomePage = () => {
-    const userName = useSelector((state) => state.loginDetails.userName);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const user = useSelector(state=> state.loginDetails.userName);
+  const isUserLoggedIn = localStorage.getItem("userLogin");
+  if (isUserLoggedIn) {
+    const userName = localStorage.getItem("userName");
+    if (userName) dispatch(slice.actions.setUserName(userName));
+  }
+
+
   const { Title, Text } = Typography;
 
   const handleLogOut = () => {
     localStorage.removeItem("userLogin");
-    window.location.reload();
+    localStorage.removeItem("userName");
+    dispatch(slice.actions.setUserName(""));
+    navigate("/")
   };
 
   const LogoutButtonCode = () => {
@@ -37,10 +51,11 @@ const HomePage = () => {
               className="popOverStyles"
               title={null}
               content={LogoutButtonCode}
-              trigger="click">
+              trigger="click"
+            >{isUserLoggedIn? 
               <Button className="homePageUserButton">
                 <div>
-                  <Text>{userName}</Text>
+                  <Text>{user}</Text>
                   &nbsp;&nbsp;&nbsp;
                   <Avatar
                     style={{ backgroundColor: "#707E7D" }}
@@ -48,6 +63,7 @@ const HomePage = () => {
                   />
                 </div>
               </Button>
+              : <Navigate to="/" />}
             </Popover>
           </Col>
           <Col md={24} xs={24} className="TitleRow">
