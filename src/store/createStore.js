@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    userName : ''
+    userName : '',
+    engineName: ''
 };
 
 export const slice  = createSlice({
@@ -10,6 +11,9 @@ export const slice  = createSlice({
     reducers: {
         setUserName (state, action) {
             state.userName = action.payload;
+        },
+        setEngineName (state, action){
+            state.engineName = action.payload;
         }
     }
 });

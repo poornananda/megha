@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import BarChart from "./BarChart";
 import { EngineList, SensorList } from "./dymmyData";
 import "./styles.scss";
+import { useDispatch } from "react-redux";
+import { slice } from "../store/createStore";
 
 const DashboardHardware = () => {
   const { Title } = Typography;
@@ -12,12 +14,14 @@ const DashboardHardware = () => {
   const [selectedEngine, setSelectedEngine] = useState("");
   const [selectedSensor, setSelectedSensor] = useState("");
 
+
   useEffect(() => {
     setEngineList(EngineList);
     setSensorList(SensorList);
   }, []);
 
   console.log(selectedSensor, selectedEngine);
+  const dispatch = useDispatch();
 
   return (
     <Row>
@@ -37,10 +41,12 @@ const DashboardHardware = () => {
                       <Select
                         size="large"
                         // value={selectedEngine}
-                        onChange={setSelectedEngine}
+                        onChange={(e)=>{
+                            dispatch(slice.actions.setEngineName(e))
+                            setSelectedEngine(e)}}
                         options={engineList}
                         style={{ width: "100%", cursor:"pointer" }}
-                        placeholder="Search to Select engine"
+                        placeholder="Select Engine"
                         showSearch
                         filterOption={(input, option) =>
                           (option?.label ?? "").includes(input)
@@ -59,7 +65,7 @@ const DashboardHardware = () => {
                         onChange={setSelectedSensor}
                         options={sensorList}
                         style={{ width: "100%", cursor:"pointer"  }}
-                        placeholder="Search to Select sensor"
+                        placeholder="Sensors"
                         showSearch
                         filterOption={(input, option) =>
                           (option?.label ?? "").includes(input)

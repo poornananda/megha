@@ -8,6 +8,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { slice } from "../store/createStore";
 import { Navigate } from "react-router-dom";
+import Dashboard from "../components/dashboard";
 
 const HomePage = () => {
   const dispatch = useDispatch();
@@ -76,8 +77,9 @@ const HomePage = () => {
           </Col>
           <Col md={4} xs={2}></Col>
           <Col md={16} xs={20}>
-            <DashboardReports />
+            <Dashboard/>
             <DashboardHardware />
+            <DashboardReports />
           </Col>
           <Col md={4} xs={2}></Col>
         </Row>
