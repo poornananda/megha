@@ -1,0 +1,19 @@
+.speedometer-wrapper {
+    display: inline-block;
+    width: 33.33%;
+  }
+  
+  .speedometer-row {
+    display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  }
+
+
+  .container {
+    position:relative;
+  }
+
+  .speedometer-wrapper:first-child {
+    padding-left: 150px;
+  }
