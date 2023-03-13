@@ -10,17 +10,36 @@
     margin-top: 20px;
 }
 
+.speedometer-row1 {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.speedometer-wrapper1 {
+    display: inline-block;
+}
+
 
 .container {
     position: relative;
 }
 
 .speedometer-wrapper:first-child {
-    padding-left: 150px;
+    padding-left: 100px;
+    padding-right:0;
 }
 
 .main {
-    width: 100%;
+    width: 98.2%;
     height: 100vh;
     overflow-y: auto;
+    background: linear-gradient(to left, #ffffff 0%, #ccffff 100%);
+    background-color: #D4E5F6;
+    backdrop-filter: blur(10px);    
+    background-size: 100% 100%;
+    border-style: solid;  
+    border-width: 10px; 
+    border-color: black;
 }
+

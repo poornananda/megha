@@ -83,7 +83,7 @@ const LoginPage = () => {
                       className="input"
                       status={!userName && validation ? "error" : ""}
                       style={{
-                        borderColor: !userName && validation ? "" : "#E7612A",
+                        borderColor: !userName && validation ? "E7612A" : "#1e64a5",
                         borderWidth: !userName && validation ? "2px" : "",
                       }}
                       placeholder="User Name"
@@ -105,15 +105,15 @@ const LoginPage = () => {
                       prefix={<LockOutlined />}
                       status={!password && validation ? "error" : ""}
                       style={{
-                        borderColor: !password && validation ? "" : "#E7612A",
+                        borderColor: !password && validation ? "E7612A" : "#1e64a5",
                         borderWidth: !password && validation ? "2px" : "",
                       }}
                       onPressEnter={handleSubmit}
                       iconRender={(visible) =>
                         visible ? (
-                          <EyeTwoTone style={{ color: "#E7612A" }} />
+                          <EyeTwoTone style={{ color: "#1e64a5" }} />
                         ) : (
-                          <EyeInvisibleOutlined style={{ color: "#E7612A" }} />
+                          <EyeInvisibleOutlined style={{ color: "#1e64a5" }} />
                         )
                       }
                     />

@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     userName : '',
-    engineName: ''
+    engineName: 'Engine 1'
 };
 
 export const slice  = createSlice({

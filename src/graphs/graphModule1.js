@@ -1,14 +1,14 @@
 import ReactSpeedometer from "react-d3-speedometer";
 import "./graphStyle.css";
 
-export const GraphsModule = () => {
+export const GraphsModule1 = () => {
   return (
     <>
       {" "}
       <div className="main">
         <div className="container">
           <div style={{ margin: "10px" }}>
-            <h2 style={{ textAlign: "center", padding: "10px" }}>
+            <h2 style={{ textAlign: "center", padding: "10px"}}>
               Engine 1 Reports
             </h2>
           </div>
@@ -19,16 +19,31 @@ export const GraphsModule = () => {
           </div>
         </div>
         <div>
+        <div className="speedometer-row1">
+            <div className="speedometer-wrapper1">
+              <ReactSpeedometer
+                maxValue={100}
+                value={45}
+                segments={10}
+                needleColor="black"
+                startColor="green"
+                endColor="red"
+                currentValueText="Remaining Useful Life"
+                height={200}
+              />
+            </div>
+          </div>
           <div className="speedometer-row">
             <div className="speedometer-wrapper">
               <ReactSpeedometer
                 maxValue={600}
                 value={400}
                 segments={10}
-                needleColor="blue"
+                needleColor="black"
                 startColor="green"
                 endColor="red"
                 currentValueText="Flight Duration"
+                height={200}
               />
             </div>
             <div className="speedometer-wrapper">
@@ -38,9 +53,10 @@ export const GraphsModule = () => {
                 segments={1000}
                 maxValue={222}
                 currentValueText="Tyre Pressure"
-                needleColor="blue"
+                needleColor="black"
                 startColor="green"
                 endColor="red"
+                height={200}
               />
             </div>
             <div className="speedometer-wrapper">
@@ -50,9 +66,10 @@ export const GraphsModule = () => {
                 segments={1000}
                 maxValue={1549}
                 currentValueText="Tyre Rotor"
-                needleColor="blue"
+                needleColor="black"
                 startColor="green"
                 endColor="red"
+                height={200}
               />
             </div>
           </div>
@@ -62,10 +79,11 @@ export const GraphsModule = () => {
                 maxValue={0.3}
                 value={0.2}
                 segments={6}
-                needleColor="blue"
+                needleColor="black"
                 startColor="green"
                 endColor="red"
                 currentValueText="Due For Maintainance"
+                height={200}
               />
             </div>
             <div className="speedometer-wrapper">
@@ -74,9 +92,10 @@ export const GraphsModule = () => {
                 segments={10}
                 maxValue={43.5}
                 currentValueText="Performance Metrics - A14"
-                needleColor="blue"
+                needleColor="black"
                 startColor="green"
                 endColor="red"
+                height={200}
               />
             </div>
             <div className="speedometer-wrapper">
@@ -86,9 +105,10 @@ export const GraphsModule = () => {
                 segments={1000}
                 maxValue={55}
                 currentValueText="Cycles"
-                needleColor="blue"
+                needleColor="black"
                 startColor="green"
                 endColor="red"
+                height={200}
               />
             </div>
           </div>

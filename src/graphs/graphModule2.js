@@ -1,7 +1,7 @@
 import ReactSpeedometer from "react-d3-speedometer";
 import "./graphStyle.css";
 
-export const GraphsModule = () => {
+export const GraphsModule2 = () => {
   return (
     <>
       {" "}
@@ -9,12 +9,12 @@ export const GraphsModule = () => {
         <div className="container">
           <div style={{ margin: "10px" }}>
             <h2 style={{ textAlign: "center", padding: "10px" }}>
-              Engine 1 Reports
+              Engine 2 Reports
             </h2>
           </div>
           <div style={{ margin: "10px" }}>
             <h3 style={{ textAlign: "center", padding: "10px" }}>
-              Engine 1 Remaining Useful Life
+              Engine 2 Remaining Useful Life
             </h3>
           </div>
         </div>
