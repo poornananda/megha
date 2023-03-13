@@ -17,7 +17,7 @@ export const Chart = (props) => {
             type: 'column',
             xKey: 'year',
             yKey: 'visitors',
-            fill: '#0084e7',
+            fill: '#1e64a5',
             strokeWidth: 0,
             shadow: {
               xOffset: 3,
