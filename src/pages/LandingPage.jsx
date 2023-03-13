@@ -70,9 +70,9 @@ const LandingPage = () => {
                 with predictive hardware units’ maintenance.
                 <br />
                   <br />
-                <Text style={{fontStyle: 'italic'}}>This Tool allows Airlines to reduce expenses by making informed
+                This Tool allows Airlines to reduce expenses by making informed
                 decisions about hardware replacement and market positioning
-                through the smart use of data.</Text>
+                through the smart use of data.
               </Title>
             </Card>
           </Col>
