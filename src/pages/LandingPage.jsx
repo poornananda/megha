@@ -69,6 +69,7 @@ const LandingPage = () => {
                 and optimize Service solutions to result in higher Air safety
                 with predictive hardware units’ maintenance.
                 <br />
+                  <br />
                 This Tool allows Airlines to reduce expenses by making informed
                 decisions about hardware replacement and market positioning
                 through the smart use of data.
