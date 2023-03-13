@@ -8,7 +8,7 @@ export const GraphsModule2 = () => {
       <div className="main">
         <div className="container">
           <div style={{ margin: "10px" }}>
-            <h2 style={{ textAlign: "center", padding: "10px" }}>
+            <h2 style={{ textAlign: "center", padding: "10px"}}>
               Engine 2 Reports
             </h2>
           </div>
@@ -19,16 +19,33 @@ export const GraphsModule2 = () => {
           </div>
         </div>
         <div>
+        <div className="speedometer-row1">
+            <div className="speedometer-wrapper1">
+              <ReactSpeedometer
+                maxValue={100}
+                value={45}
+                segments={10}
+                needleColor="black"
+                startColor="green"
+                endColor="red"
+                currentValueText="Remaining Useful Life"
+                height={200}
+                textColor="black"
+              />
+            </div>
+          </div>
           <div className="speedometer-row">
             <div className="speedometer-wrapper">
               <ReactSpeedometer
                 maxValue={600}
                 value={400}
                 segments={10}
-                needleColor="blue"
+                needleColor="black"
                 startColor="green"
                 endColor="red"
                 currentValueText="Flight Duration"
+                height={200}
+                textColor="black"
               />
             </div>
             <div className="speedometer-wrapper">
@@ -38,9 +55,11 @@ export const GraphsModule2 = () => {
                 segments={1000}
                 maxValue={222}
                 currentValueText="Tyre Pressure"
-                needleColor="blue"
+                needleColor="black"
                 startColor="green"
                 endColor="red"
+                height={200}
+                textColor="black"
               />
             </div>
             <div className="speedometer-wrapper">
@@ -50,9 +69,11 @@ export const GraphsModule2 = () => {
                 segments={1000}
                 maxValue={1549}
                 currentValueText="Tyre Rotor"
-                needleColor="blue"
+                needleColor="black"
                 startColor="green"
                 endColor="red"
+                height={200}
+                textColor="black"
               />
             </div>
           </div>
@@ -62,10 +83,12 @@ export const GraphsModule2 = () => {
                 maxValue={0.3}
                 value={0.2}
                 segments={6}
-                needleColor="blue"
+                needleColor="black"
                 startColor="green"
                 endColor="red"
                 currentValueText="Due For Maintainance"
+                height={200}
+                textColor="black"
               />
             </div>
             <div className="speedometer-wrapper">
@@ -74,9 +97,11 @@ export const GraphsModule2 = () => {
                 segments={10}
                 maxValue={43.5}
                 currentValueText="Performance Metrics - A14"
-                needleColor="blue"
+                needleColor="black"
                 startColor="green"
                 endColor="red"
+                height={200}
+                textColor="black"
               />
             </div>
             <div className="speedometer-wrapper">
@@ -86,9 +111,11 @@ export const GraphsModule2 = () => {
                 segments={1000}
                 maxValue={55}
                 currentValueText="Cycles"
-                needleColor="blue"
+                needleColor="black"
                 startColor="green"
                 endColor="red"
+                height={200}
+                textColor="black"
               />
             </div>
           </div>

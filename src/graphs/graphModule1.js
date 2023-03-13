@@ -30,6 +30,7 @@ export const GraphsModule1 = () => {
                 endColor="red"
                 currentValueText="Remaining Useful Life"
                 height={200}
+                textColor="black"
               />
             </div>
           </div>
@@ -44,6 +45,7 @@ export const GraphsModule1 = () => {
                 endColor="red"
                 currentValueText="Flight Duration"
                 height={200}
+                textColor="black"
               />
             </div>
             <div className="speedometer-wrapper">
@@ -57,6 +59,7 @@ export const GraphsModule1 = () => {
                 startColor="green"
                 endColor="red"
                 height={200}
+                textColor="black"
               />
             </div>
             <div className="speedometer-wrapper">
@@ -70,6 +73,7 @@ export const GraphsModule1 = () => {
                 startColor="green"
                 endColor="red"
                 height={200}
+                textColor="black"
               />
             </div>
           </div>
@@ -84,6 +88,7 @@ export const GraphsModule1 = () => {
                 endColor="red"
                 currentValueText="Due For Maintainance"
                 height={200}
+                textColor="black"
               />
             </div>
             <div className="speedometer-wrapper">
@@ -96,6 +101,7 @@ export const GraphsModule1 = () => {
                 startColor="green"
                 endColor="red"
                 height={200}
+                textColor="black"
               />
             </div>
             <div className="speedometer-wrapper">
@@ -109,6 +115,7 @@ export const GraphsModule1 = () => {
                 startColor="green"
                 endColor="red"
                 height={200}
+                textColor="black"
               />
             </div>
           </div>
