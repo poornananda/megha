@@ -15,7 +15,7 @@ const data = {
   datasets: [
     {
       label: "My First Dataset",
-      data: [65, 30, 100,-15, 56, -25, 90],
+      data: [30, 65, 100,-15, 56, -25, 90],
       backgroundColor: "#ED3728",
       borderColor: "#a9a9a6",
       borderWidth: 1,
