@@ -8,28 +8,30 @@ const DashboardReports = () => {
 
   const clickHandler = (event) => {
     event.preventDefault();
-    nav("/Graphs")
+    nav("/Graphs");
   };
   const { Title } = Typography;
   return (
-    <Row>
-      <Col md={24} xs={24}>
-        <Card className="hardwareEquipmentsCard">
-          <Row>
-            <Col md={24} xs={24}>
-              <Title
-                level={4}
-                className="title"
-                onClick={clickHandler}
-                style={{ cursor: "pointer" }}
-              >
-                Reports
-              </Title>
-            </Col>
-          </Row>
-        </Card>
-      </Col>
-    </Row>
+    <div style={{padding:'0  0 10px 0'}}>
+      <Row>
+        <Col md={24} xs={24}>
+          <Card className="hardwareEquipmentsCard">
+            <Row>
+              <Col md={24} xs={24}>
+                <Title
+                  level={4}
+                  className="title"
+                  onClick={clickHandler}
+                  style={{ cursor: "pointer" }}
+                >
+                  Reports
+                </Title>
+              </Col>
+            </Row>
+          </Card>
+        </Col>
+      </Row>
+    </div>
   );
 };
 

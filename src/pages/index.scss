@@ -127,6 +127,7 @@
 .homePageMain {
     width: 100%;
     height: 100vh;
+    overflow-y: auto;
     background-image: url('../assets/image1.png');
     background-size: 100% 100%;
 
