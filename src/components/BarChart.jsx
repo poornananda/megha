@@ -11,11 +11,11 @@ import {
 Chart.register(CategoryScale, LinearScale, BarController, BarElement);
 
 const data = {
-  labels: ["January", "February", "March", "April", "May", "June", "July"],
+  labels: ["Engine1", "Engine2", "Engine3", "Engine4", "Engine5", "Engine6", "Engine7"],
   datasets: [
     {
       label: "My First Dataset",
-      data: [65, 59, 80, 81, 56, 55, 40],
+      data: [65, 30, 80,-8, 36, 55, 90],
       backgroundColor: "#ED3728",
       borderColor: "#a9a9a6",
       borderWidth: 1,
