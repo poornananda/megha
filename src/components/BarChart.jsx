@@ -16,8 +16,8 @@ const data = {
     {
       label: "My First Dataset",
       data: [30, 65, 100,-15, 56, -25, 90],
-      backgroundColor: "#ED3728",
-      borderColor: "#a9a9a6",
+      backgroundColor: "#1e64a5",
+      borderColor: "#1e64a5",
       borderWidth: 1,
     },
   ],
