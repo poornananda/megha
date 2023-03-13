@@ -38,12 +38,12 @@ const options = {
   scales: {
     x: {
       ticks: {
-        color: "white",
+        color: "black",
       },
     },
     y: {
       ticks: {
-        color: "white",
+        color: "black",
       },
     },
   },
