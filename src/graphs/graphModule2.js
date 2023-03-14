@@ -26,8 +26,8 @@ export const GraphsModule2 = () => {
                 value={45}
                 segments={10}
                 needleColor="black"
-                startColor="green"
-                endColor="red"
+                startColor="red"
+                endColor="green"
                 currentValueText="Remaining Useful Life"
                 height={200}
                 textColor="black"
