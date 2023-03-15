@@ -23,7 +23,7 @@ export const GraphsModule2 = () => {
             <div className="speedometer-wrapper1">
               <ReactSpeedometer
                 maxValue={100}
-                value={18}
+                value={11}
                 segments={10}
                 needleColor="black"
                 startColor="red"
