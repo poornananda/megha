@@ -11,11 +11,6 @@ export const GraphsModule3 = () => {
               Engine 3 Reports
             </h2>
           </div>
-          <div style={{ margin: "10px" }}>
-            <h3 className="header">
-              Engine 3 Remaining Useful Life
-            </h3>
-          </div>
         </div>
         <div className="mainDiv">
           <div className="section1">
