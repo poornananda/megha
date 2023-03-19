@@ -12,11 +12,6 @@ export const GraphsModule2 = () => {
               Engine 2 Reports
             </h2>
           </div>
-          <div style={{ margin: "10px" }}>
-            <h3 style={{ textAlign: "center", padding: "10px" }}>
-              Engine 2 Remaining Useful Life
-            </h3>
-          </div>
         </div>
         <div>
         <div className="speedometer-row1">
