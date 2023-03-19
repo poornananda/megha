@@ -2,14 +2,14 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background-image: url('../assets/MicrosoftTeams-image.png');
+    background-image: url("../assets/MicrosoftTeams-image.png");
     background-size: 100% 100vh;
     .TitleRow {
-       text-align: center;
-       .title {
-          color: #2f2f35;
-          font-family: Poppins;
-       }
+        text-align: center;
+        .title {
+            color: #2f2f35;
+            font-family: Poppins;
+        }
     }
     .loginButtonRow {
         text-align: right;
@@ -57,40 +57,40 @@
     }
 }
 
-
 .loginPageMain {
     width: 100%;
     height: 100vh;
-    background-image: url('../assets/MicrosoftTeams-image.png');
+    background-image: url("../assets/MicrosoftTeams-image.png");
     background-size: 100% 100%;
+    overflow-y: auto;
 
     .TitleRow {
         text-align: center;
         .title {
-           color: #281E40;
-           margin-top: 5rem;
-           font-family: Poppins;
+            color: #281e40;
+            margin-top: 5rem;
+            font-family: Poppins;
         }
-     }
-     .loginCard {
-         margin-top: 1rem;
-         color: #2f2f35;
-         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-         background: rgba(255, 255, 255, 0.2);
-         border-radius: 16px;
-         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-         backdrop-filter: blur(5px);
-         -webkit-backdrop-filter: blur(5px);
-         border: 1px solid rgba(255, 255, 255, 0.3);
-         border-radius: 8px;
-         width: 100%;
-         .loginTitle {
+    }
+    .loginCard {
+        margin-top: 1rem;
+        color: #2f2f35;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 8px;
+        width: 100%;
+        .loginTitle {
             font-family: Poppins;
             margin: 0;
             color: #000000;
-            text-align: center;  
-         }
-         .inputBox {
+            text-align: center;
+        }
+        .inputBox {
             margin-top: 1.5rem;
             .input {
                 font-family: Poppins;
@@ -109,26 +109,24 @@
                     background-color: transparent;
                 }
             }
-         }
-         .loginButton {
+        }
+        .loginButton {
             width: 100%;
             height: 2.5rem;
             font-family: Poppins;
             font-weight: 500;
             color: white;
             background-color: #1e64a5;
-            border-color: #1e64a5;      
-         }
-     }
-
+            border-color: #1e64a5;
+        }
+    }
 }
-
 
 .homePageMain {
     width: 100%;
     height: 100vh;
     overflow-y: auto;
-    background-image: url('../assets/MicrosoftTeams-image.png');
+    background-image: url("../assets/MicrosoftTeams-image.png");
     background-size: 100% 100%;
 
     .TitleRow {
@@ -137,12 +135,12 @@
             //background: -webkit-linear-gradient(#F8C63D,#C72421);
             // -webkit-background-clip: text;
             // -webkit-text-fill-color: transparent;
-        //    color: #8C1720;
-           font-family: Poppins;
+            //    color: #8C1720;
+            font-family: Poppins;
         }
-     }
+    }
 
-     .homePageHeader {
+    .homePageHeader {
         text-align: end;
         padding: 1rem;
         padding-bottom: 0;
@@ -157,15 +155,39 @@
                 display: flex;
                 align-items: center;
                 span {
-                    color: #FFFF;
+                    color: #ffff;
                 }
             }
         }
-     }
+    }
 }
 
 .logOutButton {
     background-color: #1e64a5;
     border-color: #1e64a5;
     color: white;
+}
+
+@keyframes shake {
+    0% {
+        margin-left: 0rem;
+    }
+    25% {
+        margin-left: 0.5rem;
+    }
+    75% {
+        margin-left: -0.5rem;
+    }
+    100% {
+        margin-left: 0rem;
+    }
+}
+
+.inputInvalid {
+    text-align: center;
+    color: red;
+    animation: shake 0.2s ease-in-out 0s 2;
+    box-shadow: 0 0 0.6rem #ff0000;
+    animation: shake 0.2s ease-in-out 0s 2;
+    box-shadow: 0 0 0.2rem #ff0000;
 }

@@ -19,3 +19,22 @@ export const SensorList = [
     label: "Sensors",
   },
 ];
+
+export const userDetails = [
+  {
+    usr: "user1",
+    pwd: "password",
+  },
+  {
+    usr: "user2",
+    pwd: "password",
+  },
+  {
+    usr: "user3",
+    pwd: "password",
+  },
+  {
+    usr: "user4",
+    pwd: "password",
+  },
+];
