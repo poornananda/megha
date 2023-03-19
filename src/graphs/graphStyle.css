@@ -14,11 +14,13 @@
     display: flex;
     margin-top: 20px;
     justify-content: center;
-  align-items: center;
+    align-items: center;
+    position: relative;
 }
 
 .speedometer-wrapper1 {
     display: inline-block;
+    margin-top: 100px;
 }
 
 
@@ -67,7 +69,7 @@
     width:49.5%;
     border: 2px solid rgb(0, 0, 0);
     overflow-y:auto;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 150px);
     padding: 10px 0;
     margin: 0;
     border-radius: 10px;
@@ -98,7 +100,15 @@
      -moz-border-radius:9px ;
      -ms-border-radius:9px ;
      -o-border-radius:9px ;
-     box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;;
+     /* box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;; */
+}
+
+.dropDown{
+    position: absolute;
+    top:0;
+    width:25%;
+    right:10px;
+    background-color: transparent;
 }
 
 
