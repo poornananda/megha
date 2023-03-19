@@ -1,8 +1,3 @@
-* {
-margin: 0;
-padding: 0;
-}
-
 .speedometer-wrapper {
     display: inline-block;
     width: 2000px;
@@ -10,8 +5,8 @@ padding: 0;
 
 .speedometer-row {
     display: flex;
-    justify-content: space-between;
-    justify-items: center;
+    justify-content: center;
+  align-items: center;
     margin-top: 20px;
 }
 
@@ -19,6 +14,7 @@ padding: 0;
     display: flex;
     margin-top: 20px;
     justify-content: center;
+  align-items: center;
 }
 
 .speedometer-wrapper1 {
@@ -28,10 +24,17 @@ padding: 0;
 
 .container {
     position: relative;
+    border: 3px solid rgb(0, 120, 175);
+    border-radius: 9px;
+    -o-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .speedometer-wrapper:first-child {
-    padding-left: 100px;
+    padding-left: 10px;
     padding-right:0;
 }
 
@@ -47,4 +50,55 @@ padding: 0;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
 }
+
+.mainWindow {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    border-radius: 10px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.section1 {
+    width:49.5%;
+    border: 2px solid rgb(0, 0, 0);
+    overflow-y:auto;
+    height: calc(100vh - 200px);
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 8px 0px;
+}
+
+.mainDiv {
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     text-align: center;
+     padding: 10px 0 ;
+     border: 2px solid rgb(141, 141, 141);
+     border-radius:9px ;
+     -webkit-border-radius:9px ;
+     -moz-border-radius:9px ;
+     -ms-border-radius:9px ;
+     -o-border-radius:9px ;
+     box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;;
+}
+
 
